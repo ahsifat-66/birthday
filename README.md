@@ -20,10 +20,12 @@ A sleek, romantic, and interactive single-page birthday web application featurin
 - **📱 Dual Viewing Modes**:
   - **Zero-Gravity Orbit Mode**: Elements dynamically scale so that cards stay within the viewport on mobile devices.
   - **Mobile Story Feed Mode**: A vertical magazine-style story layout tailored for easy scrolling on phones.
-- **🎵 Procedural Ambient Sound & SFX**:
-  - Web Audio API celestial ambient chords and starlight arpeggios (zero external mp3 dependencies, no CORS issues).
-  - Interactive chime sound effects on clicks and drags.
-  - "Wish ✨" celebration stardust and heart confetti explosion.
+- **🎵 Romantic Happy Birthday Song & SFX**:
+  - Full iconic melody of *"Happy Birthday To You"* in a gentle music-box / celesta timbre.
+  - Harmonized with lush warm chords (F, C7, Bb, F/C, F) in 3/4 time that loops continuously.
+  - Support for uploading and playing custom recorded birthday MP3 tracks.
+  - Interactive starlight chime sound effects on card clicks, drags, and releases.
+  - "Wish 🌸" celebration stardust and heart confetti explosion.
 
 ---
 
@@ -42,7 +44,7 @@ A sleek, romantic, and interactive single-page birthday web application featurin
 
 ### 1. Clone the repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/ahsifat-66/birthday.git
 cd birthday
 ```
 
