@@ -201,8 +201,8 @@ export const App: React.FC = () => {
             <Volume2 className="w-3.5 h-3.5 text-pink-600" />
           </div>
           <div className="flex flex-col text-left">
-            <span className="text-xs font-semibold text-rose-800">Play Music 🌸</span>
-            <span className="text-[10px] text-pink-600/80">Tap for ambient vibes</span>
+            <span className="text-xs font-semibold text-rose-800">Birthday Song 🎂🎵</span>
+            <span className="text-[10px] text-pink-600/80">Tap to play Happy Birthday</span>
           </div>
           <button
             onClick={(e) => {

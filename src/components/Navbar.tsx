@@ -160,30 +160,32 @@ export const Navbar: React.FC<NavbarProps> = ({
             {isSfxOn ? <Volume2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> : <VolumeX className="w-3.5 h-3.5 sm:w-4 sm:h-4" />}
           </button>
 
-          {/* Ambient Music Toggle */}
-          <button
-            onClick={() => {
-              onToggleMusic();
-            }}
-            className={`flex items-center space-x-1.5 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-full glass-panel border transition-all duration-300 active:scale-95 ${
-              isMusicPlaying
-                ? 'border-pink-400 bg-pink-100/90 text-rose-700 shadow-glow-soft'
-                : 'border-pink-200/80 text-slate-700 hover:bg-white/90'
-            }`}
-            title={isMusicPlaying ? 'Pause Ambient Cosmic Music' : 'Play Ambient Cosmic Music'}
-          >
-            <Music className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${isMusicPlaying ? 'animate-bounce text-rose-600' : 'text-slate-600'}`} />
-            <span className="text-xs font-medium hidden sm:inline">
-              {isMusicPlaying ? 'Music Playing' : 'Music'}
-            </span>
-            {isMusicPlaying && (
-              <span className="flex items-end space-x-0.5 h-3 sm:h-3.5">
-                <span className="w-0.5 bg-rose-500 h-full animate-[pulse_0.6s_ease-in-out_infinite]"></span>
-                <span className="w-0.5 bg-pink-400 h-2/3 animate-[pulse_0.9s_ease-in-out_infinite]"></span>
-                <span className="w-0.5 bg-rose-400 h-4/5 animate-[pulse_0.75s_ease-in-out_infinite]"></span>
+          {/* Birthday Song Toggle with Custom Audio Option */}
+          <div className="flex items-center">
+            <button
+              onClick={() => {
+                onToggleMusic();
+              }}
+              className={`flex items-center space-x-1.5 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-full glass-panel border transition-all duration-300 active:scale-95 ${
+                isMusicPlaying
+                  ? 'border-pink-400 bg-pink-100/90 text-rose-700 shadow-glow-soft'
+                  : 'border-pink-200/80 text-slate-700 hover:bg-white/90'
+              }`}
+              title={isMusicPlaying ? 'Pause Happy Birthday Song' : 'Play Happy Birthday Song'}
+            >
+              <Music className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${isMusicPlaying ? 'animate-bounce text-rose-600' : 'text-slate-600'}`} />
+              <span className="text-xs font-medium">
+                {isMusicPlaying ? 'Song Playing 🎶' : 'Birthday Song'}
               </span>
-            )}
-          </button>
+              {isMusicPlaying && (
+                <span className="flex items-end space-x-0.5 h-3 sm:h-3.5">
+                  <span className="w-0.5 bg-rose-500 h-full animate-[pulse_0.6s_ease-in-out_infinite]"></span>
+                  <span className="w-0.5 bg-pink-400 h-2/3 animate-[pulse_0.9s_ease-in-out_infinite]"></span>
+                  <span className="w-0.5 bg-rose-400 h-4/5 animate-[pulse_0.75s_ease-in-out_infinite]"></span>
+                </span>
+              )}
+            </button>
+          </div>
 
           {/* Stardust Celebration Trigger */}
           <button
